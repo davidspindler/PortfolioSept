@@ -246,12 +246,15 @@
       </div>
     </div> -->
     
-            <form class="form">
+            <form class="form" action="POST" data-netlify="true">
               <h2 class="black">CONTACT ME</h2>
-              <p type="Your Name:"><input placeholder="Name.."></input></p>
-              <p type="Your Email:"><input placeholder="Email"></input></p>
-              <p type="Your Message:"><input placeholder="Message.."></input></p>
+              <p type="Your Name:"><input placeholder="Name.." name="name"></input></p>
+              <p type="Your Email:"><input placeholder="Email" name="email"></input></p>
+              <p type="Your Message:"><input placeholder="Message.." name="message"></input></p>
               <button>Send Message</button>
+              <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
              
             </form>
             
